@@ -1,3 +1,7 @@
+<?php include'functions.php';
+$large = largest(array(1,7,9,15,8,3));
+echo "$large";
+?>
 <!doctype html>
 <html lang="en">
 <head>
