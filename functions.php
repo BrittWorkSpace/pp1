@@ -22,4 +22,14 @@ function largest($data)
     }
     return $max;
 }
+
+function average($data)
+{
+    $sum=0;
+    foreach ($data as $item)
+    {
+        $sum+=$item;
+    }
+    return $sum/count($data);
+}
 ?>

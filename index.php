@@ -1,6 +1,10 @@
 <?php include'functions.php';
-$large = largest(array(1,7,9,15,8,3));
+$testArr = array(1,7,9,15,8,3);
+$large = largest($testArr);
 echo "$large";
+echo "<br>";
+$average = average($testArr);
+echo "$average";
 ?>
 <!doctype html>
 <html lang="en">
