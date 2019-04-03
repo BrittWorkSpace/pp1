@@ -47,4 +47,23 @@ function removeDups($data)
     }
     return $copy;
 }
+
+function distribution($data)
+{
+    sort($data);
+    $assocArr = [];
+    foreach ($data as $item)
+    {
+        if(array_key_exists($item,$assocArr))
+        {
+            $assocArr[$item]++;
+        }
+        else
+        {
+            $assocArr[$item] =1;
+        }
+    }
+    return $assocArr;
+
+}
 ?>

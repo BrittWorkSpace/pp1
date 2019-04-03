@@ -7,11 +7,18 @@ echo $large;
 echo "<br>";
 $average = average($testArr);
 echo $average;
+echo "<br>";
 $newArr =removeDups($numArray);
 foreach ($newArr as $item)
 {
     echo $item;
     echo "<br>";
+}
+
+$testArr = distribution($numArray);
+foreach ($testArr as $item => $key)
+{
+    echo "$item". "=>". "$key". ",";
 }
 
 ?>
