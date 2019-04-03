@@ -1,10 +1,19 @@
 <?php include'functions.php';
+$numArray = array(7,9,8,9,8,8,6);
 $testArr = array(1,7,9,15,8,3);
+printArr($numArray);
 $large = largest($testArr);
-echo "$large";
+echo $large;
 echo "<br>";
 $average = average($testArr);
-echo "$average";
+echo $average;
+$newArr =removeDups($numArray);
+foreach ($newArr as $item)
+{
+    echo $item;
+    echo "<br>";
+}
+
 ?>
 <!doctype html>
 <html lang="en">

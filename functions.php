@@ -4,11 +4,12 @@ function printArr($data)
     foreach ($data as $value)
     {
         echo $value;
+        echo "<br>";
     }
     echo "<br>";
 }
-$numArray = array(7,9,8,9,8,8,6);
-printArr($numArray);
+
+
 
 function largest($data)
 {
@@ -31,5 +32,19 @@ function average($data)
         $sum+=$item;
     }
     return $sum/count($data);
+}
+
+function removeDups($data)
+{
+    sort($data);
+    $copy = $data;
+    for($i=count($copy); $i>0; $i--)
+    {
+        if($copy[$i] == $copy[$i-1])
+        {
+            unset($copy[$i]);
+        }
+    }
+    return $copy;
 }
 ?>
